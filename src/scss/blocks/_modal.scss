@@ -1,0 +1,64 @@
+.overlay {
+  position: fixed;
+  width: 100%;
+  display: none;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba($color: #000000, $alpha: 0.55);
+  // &-active {
+  //   display: block;
+  // }
+}
+
+.modal {
+  max-width: 380px;
+  width: 100%;
+  text-align: center;
+  background: #f2f2f2;
+  padding: 38px 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  .feed-form {
+    margin: 0 auto;
+  }
+  // &__consultation-active {
+  //   display: block;
+  // }
+  // &__buy-active {
+  //   display: block;
+  // }
+  // &__thanks-active {
+  //   display: block;
+  // }
+}
+
+#consultation,
+#order,
+#thanks {
+  display: none;
+}
+
+.modal__title {
+  font-size: 19px;
+  font-weight: 700;
+  color: #0d0d0d;
+}
+
+.modal__descr {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0d0d0d;
+  margin-bottom: 26px;
+}
+
+.modal__close {
+  color: $btn_color;
+  font-size: 45px;
+  position: absolute;
+  top: -13px;
+  right: 3px;
+  cursor: pointer;
+}
